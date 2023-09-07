@@ -1,0 +1,18 @@
+import capos.*
+import artefactos.*
+import castillo.*
+
+describe "" {
+	
+	test "cargo 2 elementos, no me deja cargar un tercero" {
+		rolando.recolectar(espada)
+		rolando.recolectar(libroHechizos)
+		assert.equals(2, rolando.artefactos().size())
+		rolando.recolectar(collarDivino)
+		assert.equals(2, rolando.artefactos().size())
+	}
+	
+	test "cargo 2 elementos, los llevo al castillo, y tengo 0 artefactos" {
+		
+	}
+}
